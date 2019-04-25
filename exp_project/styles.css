@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-image: radial-gradient(black, white);
+    background-position: center;
+}
+
+.image {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    filter: blur(8px);
+    left: 164px;
+}
+
+.image-on-click {
+    filter: blur(0px);
+}
+
+.this-form {
+    background-color: rgba(233, 229, 229, 0.3);
+    border: 1px solid #8f8c92;
+    position: absolute;
+    background-clip: padding-box;
+    display: inline-block;
+    padding: 50px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    left: 35%;
+    top: 25%;
+}
+
+.answer-block {
+    display: none;
+    padding: 50px;
+    padding-left: 100px;
+    padding-top: 100px;
+    position: absolute;
+    background: none;
+    border: none;
+    left: 594px;
+    top: 300px;
+}
+
+.answer-block-onclick {
+    display: block;
+}
+
+.font {
+    display: none;
+    position: absolute;
+    color: #213E93;
+    font: bold large Helvetica;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 1;
+    font-variant: small-caps;
+    text-align: center;
+    right: 1px;
+    top: -25px;
+    text-shadow: rgb(163, 180, 216) 1px 0 1px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.font-on-click {
+    display: block;
+}
+
+.form-on-click {
+    display: none;
+}
+
+#form {
+    text-align: center;
+}
+
+#input-area2 {
+    width: 250px;
+}
+
+.error-box {
+    display: none;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+#submit-button {
+    cursor: pointer;
+}
