@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img class=image src="./images/3.png" rel="">
+    <div class="error-box" onclick="closeBox()">
+            <a class="close" href="#"> &times;</a>
+            <p class="content">Fill in all fields!</p>
+    </div>
+    <div class="this-form">
+            
+        <form id="form" name="form">
+                
+            <label for="input-area1" class="label"><b>Enter your name</b></label>
+            <input id="input-area1" type="text" name="first-number-entry" class="input1">
+            <br>
+            <br>
+            <label for="input-area2" class="label"><b>Enter your question</b></label>
+            <input id="input-area2" type="text" name="second-number-entry" class="input2">
+            <br>
+            <br>
+            
+        </form>
+    </div>
+    <input id="submit-button" type="button" value="Ask me">
+    <div class="answer-block" id="answer-block"><p class="font"></p></div>
+    <table id="table" class="this-table" onclick="addRow()">
+        <tr>
+            <th>Name</th>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

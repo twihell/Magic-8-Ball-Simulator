@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(black, grey, white);
+    background-repeat: no-repeat;
+}
+
+.image {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    left: 370px;
+    top: -30px;
+}
+
+.this-form {
+    background-color: #cacaca;
+    ;
+    border: 1px solid #8f8c92;
+    position: absolute;
+    background-clip: padding-box;
+    display: block;
+    padding: 19px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-right: 144px;
+    left: 334px;
+    top: 352px;
+}
+
+.label {
+    width: 25%;
+    margin-top: 6px;
+    padding-left: -5px;
+}
+
+.input1 {
+    float: center;
+    width: 100px;
+    margin-left: 75px;
+}
+
+.input2 {
+    float: center;
+    width: 300px;
+    margin-left: 50px;
+}
+
+.answer-block {
+    display: none;
+    padding: 25px;
+    padding-left: 100px;
+    padding-top: 100px;
+    position: absolute;
+    background: none;
+    border: none;
+    left: 613px;
+    top: 155px;
+}
+
+.answer-block-onclick {
+    display: block;
+}
+
+.font {
+    display: block;
+    position: absolute;
+    color: #213E93;
+    font: bold large Helvetica;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    font-variant: small-caps;
+    text-align: center;
+    right: 1px;
+    top: -25px;
+    text-shadow: rgb(163, 180, 216) 1px 0 1px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.font-on-click {
+    display: block;
+}
+
+#form {
+    text-align: left;
+}
+
+.error-box {
+    display: none;
+    margin: 70px auto;
+    padding: 20px;
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(241, 44, 44);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    z-index: 9999;
+}
+
+.show {
+    display: block;
+}
+
+.error-box .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.error-box .close:hover {
+    color: rgb(172, 171, 171);
+}
+
+.error-box .content {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.this-table {
+    display: flexbox;
+    border: 1px solid #8f8c92;
+    width: 50%;
+    border-collapse: collapse;
+    position: absolute;
+    background-color: rgba(233, 229, 229, 0.3);
+    background-clip: padding-box;
+    top: 499px;
+    left: 334px;
+}
+
+td, th {
+    border: 1px solid #8f8c92;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(233, 229, 229, 0.3);
+}
+
+#submit-button {
+    zoom: 1;
+    padding: 6px 20px;
+    margin: 0;
+    cursor: pointer;
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+    padding: 14px 313.5px;
+    display: inline-block;
+    position: absolute;
+    left: 333.5px;
+    top: 451.5px;
+    background-color: rgb(97, 96, 96);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+    border-radius: 1px;
+    border: 1px solid gray;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+}
+
+#submit-button:active {
+    background: no-repeat bottom;
+}
