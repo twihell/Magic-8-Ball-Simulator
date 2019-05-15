@@ -18,7 +18,7 @@ const answersArray = ['It is certain', 'It is decidedly so', 'Without a doubt', 
 
 
 function submitScript() {
-
+    console.log("message");
     if (inputOne.value == '' || inputTwo.value == '') {
         errorMessage.innerHTML = 'Fill in all fields!';
         errorMessage.classList.add('show');

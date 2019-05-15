@@ -1,4 +1,4 @@
-body, html {
+html {
     height: 100%;
 }
 
@@ -10,14 +10,18 @@ body, html {
 body {
     background-image: radial-gradient(black, white);
     background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .image {
     width: 75%;
-    height: auto;
     position: absolute;
     filter: blur(8px);
-    left: 164px;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
 }
 
 .image-on-click {
@@ -33,8 +37,9 @@ body {
     padding: 50px;
     padding-top: 5px;
     padding-bottom: 20px;
-    left: 35%;
-    top: 25%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .answer-block {
@@ -45,8 +50,12 @@ body {
     position: absolute;
     background: none;
     border: none;
-    left: 594px;
-    top: 300px;
+    margin: auto;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    
+    
 }
 
 .answer-block-onclick {
