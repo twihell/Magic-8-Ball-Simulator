@@ -19,9 +19,21 @@ body {
     position: absolute;
     filter: blur(8px);
     left: 50%;
-    top: 51%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 1024px;
+    animation-name: blurOut;
+    animation-duration: 3s;
+}
+
+@keyframes blurOut {
+    from {
+        filter: blur(0px);
+    }
+    to {
+        filter: blur(8px);
+    }
 }
 
 .image-on-click {
@@ -39,7 +51,20 @@ body {
     padding-bottom: 20px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
 }
 
 .answer-block {
@@ -53,9 +78,7 @@ body {
     margin: auto;
     left: 50%;
     top: 55%;
-    transform: translate(-50%,-50%);
-    
-    
+    transform: translate(-50%, -50%);
 }
 
 .answer-block-onclick {
@@ -65,7 +88,7 @@ body {
 .font {
     display: none;
     position: absolute;
-    color: #213E93;
+    /* color: #213E93; */
     font: bold large Helvetica;
     font-weight: 700;
     font-size: 33px;
@@ -77,6 +100,34 @@ body {
     text-shadow: rgb(163, 180, 216) 1px 0 1px;
     word-break: break-word;
     overflow-wrap: anywhere;
+    animation-direction: reverse;
+    animation: smoky, colorChange;
+    animation-duration: 2s, 0.5s;
+    animation-delay: 0s, 1.5s;
+    animation-timing-function: ease-out, ease-out;
+    animation-fill-mode: both, both;
+    /* color: transparent; */
+    backface-visibility: hidden;
+}
+
+@keyframes smoky {
+    from {
+        transform: scale(1) skewX(-140deg) skewY(-180deg) rotateX(-45deg) rotateY(0deg) rotateZ(-45deg);
+        text-shadow: 0 0 40px rgb(163, 180, 216);
+    }
+    to {
+        text-shadow: rgb(163, 180, 216) 1px 0 1px;
+        transform: skewX(0deg) skewY(0deg) rotate(0deg);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: transparent;
+    }
+    to {
+        color: #213E93;
+    }
 }
 
 .font-on-click {

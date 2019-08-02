@@ -5,6 +5,7 @@ const errorMessage = document.getElementsByClassName('error-box')[0];
 const inputOne = document.getElementById('input-area1');
 const inputTwo = document.getElementById('input-area2');
 const form = document.getElementsByClassName('this-form')[0];
+const formElement = document.getElementById('form');
 const image = document.getElementsByClassName('image')[0];
 const resetButton = document.getElementById('reset-button');
 const answerBlock = document.getElementById('answer-block');
@@ -17,8 +18,14 @@ const answersArray = ['It is certain', 'It is decidedly so', 'Without a doubt', 
     'My sources say no', 'Outlook not so good', 'Very doubtful'];
 
 
+
+window.onload = function () {
+    console.log('Документ и все ресурсы загружены');
+    formElement.reset();
+}
+
 function submitScript() {
-    console.log("message");
+
     if (inputOne.value == '' || inputTwo.value == '') {
         errorMessage.innerHTML = 'Fill in all fields!';
         errorMessage.classList.add('show');
@@ -31,9 +38,7 @@ function submitScript() {
         font.innerHTML = askMeResult(answersArray);
     }
     return font.innerHTML;
-
 }
-
 
 submitButton.addEventListener('click', submitScript);
 
