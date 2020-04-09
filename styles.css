@@ -44,7 +44,6 @@ body {
     background-color: #cacaca;
     border: 1px solid #8f8c92;
     padding: 20px;
-    padding-bottom: 5%;
     width: 45%;
 }
 
@@ -202,8 +201,6 @@ tr:nth-child(even) {
 } */
 
 #submit-button {
-    position: absolute;
-    z-index: 2;
     width: 45%;
     margin: 20px -20px 0 -20px;
     height: auto;
@@ -237,7 +234,7 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 768px) {
-    .this-table, #submit-button, .LeForm {
+    .this-table, .LeForm {
         width: 100%;
     }
     .image {
@@ -260,7 +257,7 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 600px) {
-    .col-40, .col-60, th, td, #submit-button {
+    .col-40, .col-60, th, td {
         margin-top: 0;
         font-size: 12px;
     }
@@ -268,7 +265,7 @@ tr:nth-child(even) {
         top: 44%;
         width: 20%;
     }
-    .this-table, #submit-button, .LeForm {
+    .this-table, .LeForm {
         width: 100%;
     }
     .image {
