@@ -30,7 +30,7 @@ body {
 .image {
     width: 45%;
     min-width: 100px;
-    height: auto;
+    height: 45%;
 }
 
 .this-form {
@@ -88,7 +88,6 @@ label {
     position: absolute;
     padding: 20px;
     width: 10%;
-    height: auto;
     background: none;
     border: none;
     z-index: 2;
@@ -287,5 +286,9 @@ tr:nth-child(even) {
 @media screen and (max-width: 400px) {
     .errorbox-wrapper{
         top: 55%;
+    }
+
+    .answer-block {
+        top: 10%;
     }
 }
