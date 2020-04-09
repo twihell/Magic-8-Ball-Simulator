@@ -6,39 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img class=image src="./images/3.png" rel="">
-    <div class="error-box" onclick="closeBox()">
-            <a class="close" href="#"> &times;</a>
+  
+
+
+    <div class="errorbox-wrapper">
+        <div class="error-box" onclick="closeBox()">
+
             <p class="content">Fill in all fields!</p>
+            <a class="close" href="#"> &times;</a>
+
+        </div>
     </div>
-    <div class="this-form">
-            
-        <form id="form" name="form">
-                
-            <label for="input-area1" class="label"><b>Enter your name</b></label>
-            <input id="input-area1" type="text" name="first-number-entry" class="input1">
-            <br>
-            <br>
-            <label for="input-area2" class="label"><b>Enter your question</b></label>
-            <input id="input-area2" type="text" name="second-number-entry" class="input2">
-            <br>
-            <br>
-            
-        </form>
+
+    <div class="main-wrapper">
+
+
+
+        <div class="image-wrapper">
+            <img class=image src="./images/3.png" rel="">
+
+            <div class="answer-block" id="answer-block">
+                <p class="font"></p>
+            </div>
+        </div>
+
+        <div class="this-form">
+
+            <form id="form" class="LeForm" name="form">
+                <div class="row">
+                    <div class="col-40">
+                        <label for="input-area1" class="label">Enter your name</label>
+                    </div>
+                    <div class="col-60">
+                        <input id="input-area1" type="text" name="first-number-entry" class="input1">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-40">
+                        <label for="input-area2" class="label">Enter your question</label>
+                    </div>
+                    <div class="col-60">
+                        <input id="input-area2" type="text" name="second-number-entry" class="input2">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="button-wrapper">
+            <button id="submit-button" type="button"><b>Ask Me</b></button>
+        </div>
+
+        <table id="table" class="this-table" onclick="addRow()">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Question</th>
+                    <th scope="col">Answer</th>
+                </tr>
+            </thead>
+        </table>
     </div>
-    <input id="submit-button" type="button" value="Ask me">
-    <div class="answer-block" id="answer-block"><p class="font"></p></div>
-    <table id="table" class="this-table" onclick="addRow()">
-        <tr>
-            <th>Name</th>
-            <th>Question</th>
-            <th>Answer</th>
-        </tr>
-    </table>
     <script src="script.js"></script>
 </body>
 
