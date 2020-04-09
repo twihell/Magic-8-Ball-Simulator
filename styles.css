@@ -95,7 +95,7 @@ label {
 }
 
 .answer-block-onclick {
-    display: flex;
+    display: inline-flex;
 }
 
 .font {
@@ -114,7 +114,7 @@ label {
 }
 
 .font-on-click {
-    display: inline-block;
+    display: flex;
 }
 
 .errorbox-wrapper {
@@ -286,9 +286,5 @@ tr:nth-child(even) {
 @media screen and (max-width: 400px) {
     .errorbox-wrapper{
         top: 55%;
-    }
-
-    .answer-block {
-        top: 10%;
     }
 }
