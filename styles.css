@@ -255,8 +255,6 @@ tr:nth-child(even) {
     }
 }
 
-}
-
 @media screen and (max-width: 600px) {
     .col-40, .col-60, th, td, #submit-button {
         margin-top: 0;
