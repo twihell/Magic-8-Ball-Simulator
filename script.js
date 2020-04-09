@@ -16,7 +16,7 @@ const answersArray = ['It is certain', 'It is decidedly so', 'Without a doubt', 
     'My sources say no', 'Outlook not so good', 'Very doubtful'];
 
 
-const answers = JSON.parse(localStorage.getItem('answers')) || [];
+    const answers = JSON.parse(localStorage.getItem('answers')) || [];
 
 
 function submitScript() {
@@ -51,7 +51,7 @@ function submitScript() {
             cell3.innerHTML = font.innerHTML;
             return newRow;
         }
-
+       
         addRow(myTable);
         return font.innerHTML;
     }
@@ -64,25 +64,24 @@ submitButton.addEventListener('click', () => {
     submitScript();
     inputOne.value = "";
     inputTwo.value = "";
-    
 });
 
 function askMeResult(array) {
-        const index = randomNumbers(array);
-        return array[index];
+    const index = randomNumbers(array);
+    return array[index];
 
-    }
+}
 
 
 function randomNumbers(array) {
-        const arrLength = array.length - 1;
-        return (Math.random() * arrLength).toFixed();
-    }
+    const arrLength = array.length - 1;
+    return (Math.random() * arrLength).toFixed();
+}
 
 
 
 errorMessage.addEventListener('click', closeBox);
 
 function closeBox() {
-    errorMessage.classList.remove('show')
+    errorMessage.classList.remove('show');
 }
