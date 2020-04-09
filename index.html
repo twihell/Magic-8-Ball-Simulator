@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  
+
 
 
     <div class="errorbox-wrapper">
@@ -38,30 +38,32 @@
         <div class="this-form">
 
             <form id="form" class="LeForm" name="form">
-                <div class="row">
-                    <div class="col-40">
-                        <label for="input-area1" class="label">Enter your name</label>
+        
+                    <div class="row">
+                        <div class="col-40">
+                            <label for="input-area1" class="label">Enter your name</label>
+                        </div>
+                        <div class="col-60">
+                            <input id="input-area1" type="text" name="first-number-entry" class="input1">
+                        </div>
                     </div>
-                    <div class="col-60">
-                        <input id="input-area1" type="text" name="first-number-entry" class="input1">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-40">
-                        <label for="input-area2" class="label">Enter your question</label>
-                    </div>
-                    <div class="col-60">
-                        <input id="input-area2" type="text" name="second-number-entry" class="input2">
+                    <br>
+                    <div class="row">
+                        <div class="col-40">
+                            <label for="input-area2" class="label">Enter your question</label>
+                        </div>
+                        <div class="col-60">
+                            <input id="input-area2" type="text" name="second-number-entry" class="input2">
+                        </div>
                     </div>
 
-                </div>
+                <!-- <div class="button-wrapper"> -->
+                <button id="submit-button" type="button"><b>Ask Me</b></button>
+                <!-- </div> -->
             </form>
         </div>
 
-        <div class="button-wrapper">
-            <button id="submit-button" type="button"><b>Ask Me</b></button>
-        </div>
+
 
         <table id="table" class="this-table" onclick="addRow()">
             <thead>

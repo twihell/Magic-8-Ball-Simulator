@@ -44,6 +44,7 @@ body {
     background-color: #cacaca;
     border: 1px solid #8f8c92;
     padding: 20px;
+    padding-bottom: 5%;
     width: 45%;
 }
 
@@ -191,17 +192,20 @@ tr:nth-child(even) {
     background-color: rgb(224, 224, 224);
 }
 
-.button-wrapper {
+/* .button-wrapper {
     display: flex;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     top: -60px;
-}
+} */
 
 #submit-button {
+    position: absolute;
+    z-index: 2;
     width: 45%;
+    margin: 20px -20px 0 -20px;
     height: auto;
     cursor: pointer;
     text-decoration: none;
