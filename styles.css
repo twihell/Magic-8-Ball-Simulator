@@ -93,12 +93,13 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    text-align: center;
     z-index: 2;
     top: 90%;
 }
 
 .error-box {
-    display: flex;
+    display: block;
     padding: 20px;
     background: rgb(241, 44, 44);
     border-radius: 5px;
@@ -201,7 +202,7 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 768px) {
-    .this-table, .LeForm {
+    .this-table, .LeForm, .error-box {
         width: 100%;
     }
     .image {
@@ -211,7 +212,7 @@ tr:nth-child(even) {
         top: 30px;
     }
     .errorbox-wrapper {
-        top: 65%;
+        top:70%;
     }
     .answer-block {
         top: 47%;
@@ -232,8 +233,12 @@ tr:nth-child(even) {
         top: 44%;
         width: 20%;
     }
-    .this-table, .LeForm {
+    .this-table, .LeForm, .error-box {
         width: 100%;
+    }
+
+    .errorbox-wrapper {
+        top: 50%;
     }
     .image {
         width: 90%;
@@ -241,16 +246,14 @@ tr:nth-child(even) {
     .main-wrapper {
         top: 30px;
     }
-    .error-box{
-        top: 10%;
-    }
+    
     .font {
         font-size: 3vw;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .errorbox-wrapper{
-        top: 55%;
+@media screen and (max-height: 736px) {
+    .errorbox-wrapper {
+        top: 65%;
     }
 }
