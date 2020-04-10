@@ -38,47 +38,18 @@ body {
     position: relative;
     justify-content: center;
     top: -60px;
+    max-width: 100%;
 }
 
 .LeForm {
     background-color: #cacaca;
     border: 1px solid #8f8c92;
-    padding: 20px;
     width: 45%;
 }
 
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col-60 {
-    float: left;
-    width: 60%;
-    min-width: 20%;
-}
-
-.input1 {
-    min-width: 40%;
-    max-width: 80%;
-}
-
-.input2 {
-    width: 80%;
-}
-
-.col-40 {
-    float: left;
-    width: 40%;
-    margin-top: 6px;
-}
-
-label {
-    font-weight: bold;
-    display: inline-block;
+.input {
+    margin: 4% 4% 4% 4%;
+    position: relative;
 }
 
 .answer-block {
@@ -191,18 +162,13 @@ tr:nth-child(even) {
     background-color: rgb(224, 224, 224);
 }
 
-/* .button-wrapper {
-    display: flex;
+.button-wrapper {
+    margin: 0 0 0 0;
     position: relative;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    top: -60px;
-} */
+}
 
 #submit-button {
-    width: 45%;
-    margin: 20px -20px 0 -20px;
+    width: 100%;
     height: auto;
     cursor: pointer;
     text-decoration: none;
