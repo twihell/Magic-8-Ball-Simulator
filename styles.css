@@ -92,34 +92,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     text-align: center;
-    z-index: 2;
-    top: 90%;
+    position: relative;
 }
 
 .error-box {
-    display: block;
+    display: none;
     padding: 20px;
     background: rgb(241, 44, 44);
     border-radius: 5px;
     width: 45%;
     justify-content: center;
     text-align: center;
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
     position: absolute;
-    opacity: 0;
 }
 
 .show {
-    opacity: 1;
+    display: flex;
 }
 
 .close {
+    position: absolute;
     transition: all 200ms;
     font-size: 20px;
     font-weight: bold;
@@ -127,9 +120,9 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
     clear: both;
+    float: right;
     right: 3%;
     top: 10%;
-    position: absolute;
 }
 
 .error-box .close:hover {
@@ -196,9 +189,6 @@ tr:nth-child(even) {
     .font {
         font-size: 2vw;
     }
-    .errorbox-wrapper {
-        top: 45%;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -210,9 +200,6 @@ tr:nth-child(even) {
     }
     .main-wrapper {
         top: 30px;
-    }
-    .errorbox-wrapper {
-        top:70%;
     }
     .answer-block {
         top: 47%;
@@ -237,9 +224,6 @@ tr:nth-child(even) {
         width: 100%;
     }
 
-    .errorbox-wrapper {
-        top: 50%;
-    }
     .image {
         width: 90%;
     }
@@ -249,11 +233,5 @@ tr:nth-child(even) {
     
     .font {
         font-size: 3vw;
-    }
-}
-
-@media screen and (max-height: 736px) {
-    .errorbox-wrapper {
-        top: 65%;
     }
 }
