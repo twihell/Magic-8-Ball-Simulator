@@ -1,22 +1,22 @@
 
 
-const submitButton = document.getElementById('submit-button');
-const errorMessage = document.getElementsByClassName('error-box')[0];
-const inputOne = document.getElementById('input-area1');
-const inputTwo = document.getElementById('input-area2');
-const form = document.getElementsByClassName('this-form')[0];
-const image = document.getElementsByClassName('image')[0];
-const answerBlock = document.getElementById('answer-block');
-const font = document.getElementsByClassName('font')[0];
-const myTable = document.getElementsByTagName('table')[0];
+var submitButton = document.getElementById('submit-button');
+var errorMessage = document.getElementsByClassName('error-box')[0];
+var inputOne = document.getElementById('input-area1');
+var inputTwo = document.getElementById('input-area2');
+var form = document.getElementsByClassName('this-form')[0];
+var image = document.getElementsByClassName('image')[0];
+var answerBlock = document.getElementById('answer-block');
+var font = document.getElementsByClassName('font')[0];
+var myTable = document.getElementsByTagName('table')[0];
 
-const answersArray = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Yes - definitely', 'You may rely on it',
+var answersArray = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Yes - definitely', 'You may rely on it',
     'As I see it, yes', 'Most likely', 'Outlook good', 'Signs point to yes', 'Reply hazy, try again', 'Ask again later',
     'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again', 'Don\'t count on it', 'My reply is no',
     'My sources say no', 'Outlook not so good', 'Very doubtful'];
 
 
-    const answers = JSON.parse(localStorage.getItem('answers')) || [];
+    var answers = JSON.parse(localStorage.getItem('answers')) || [];
 
 
 function submitScript() {
@@ -31,12 +31,12 @@ function submitScript() {
 
         function addRow(element) {
 
-            const newRow = element.insertRow(element.length);
-            const cell1 = newRow.insertCell(0);
-            const cell2 = newRow.insertCell(1);
-            const cell3 = newRow.insertCell(2);
+            var newRow = element.insertRow(element.length);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
 
-            const answer = {
+            var answer = {
                 name: inputOne.value,
                 question: inputTwo.value,
                 answering: font.innerHTML
@@ -60,21 +60,21 @@ function submitScript() {
 
 
 
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener('click', function () {
     submitScript();
     inputOne.value = "";
     inputTwo.value = "";
 });
 
 function askMeResult(array) {
-    const index = randomNumbers(array);
+    var index = randomNumbers(array);
     return array[index];
 
 }
 
 
 function randomNumbers(array) {
-    const arrLength = array.length - 1;
+    var arrLength = array.length - 1;
     return (Math.random() * arrLength).toFixed();
 }
 
