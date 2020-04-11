@@ -54,9 +54,10 @@ body {
 
 .answer-block {
     display: none;
+    position: fixed;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    position: absolute;
     padding: 20px;
     width: 10%;
     background: none;
@@ -66,12 +67,12 @@ body {
 }
 
 .answer-block-onclick {
-    display: inline-flex;
+    display: flex;
 }
 
 .font {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     color: #213E93;
     font: bold large Helvetica;
     font-weight: 700;
@@ -82,10 +83,12 @@ body {
     text-shadow: rgb(163, 180, 216) 1px 0 1px;
     word-break: break-word;
     overflow-wrap: anywhere;
+    margin: auto;
 }
 
 .font-on-click {
-    display: flex;
+    display: inline-block;
+    
 }
 
 .errorbox-wrapper {
