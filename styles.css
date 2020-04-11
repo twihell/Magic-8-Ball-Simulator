@@ -63,7 +63,7 @@ body {
     background: none;
     border: none;
     z-index: 2;
-    top: 23%;
+    top: 44%;
 }
 
 .answer-block-onclick {
@@ -206,7 +206,7 @@ tr:nth-child(even) {
         top: 30px;
     }
     .answer-block {
-        top: 47%;
+        top: 20%;
         width: 20%;
         left: 40%;
     }
@@ -221,7 +221,7 @@ tr:nth-child(even) {
         font-size: 12px;
     }
     .answer-block {
-        top: 44%;
+        top: 20%;
         width: 20%;
     }
     .this-table, .LeForm, .error-box {
