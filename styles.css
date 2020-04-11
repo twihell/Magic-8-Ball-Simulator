@@ -221,8 +221,9 @@ tr:nth-child(even) {
         font-size: 12px;
     }
     .answer-block {
-        top: 40%;
-        width: 20%;
+        top: 33%;
+        width: 27%;
+        left: 36.5%;
     }
     .this-table, .LeForm, .error-box {
         width: 100%;
