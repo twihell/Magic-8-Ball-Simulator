@@ -206,9 +206,8 @@ tr:nth-child(even) {
         top: 30px;
     }
     .answer-block {
-        top: 20%;
+        top: 22%;
         width: 20%;
-        left: 40%;
     }
     .font {
         font-size: 3vw;
