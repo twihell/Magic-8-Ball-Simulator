@@ -87,7 +87,7 @@ body {
 }
 
 .font-on-click {
-    display: block;
+    display: flex;
     
 }
 
@@ -206,8 +206,9 @@ tr:nth-child(even) {
         top: 30px;
     }
     .answer-block {
-        top: 22%;
+        top: 20%;
         width: 20%;
+        left: 40%;
     }
     .font {
         font-size: 3vw;
@@ -220,7 +221,7 @@ tr:nth-child(even) {
         font-size: 12px;
     }
     .answer-block {
-        top: 22%;
+        top: 40%;
         width: 20%;
     }
     .this-table, .LeForm, .error-box {
