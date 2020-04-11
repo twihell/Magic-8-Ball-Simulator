@@ -54,7 +54,7 @@ body {
 
 .answer-block {
     display: none;
-    position: fixed;
+    position: absolute;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ body {
     background: none;
     border: none;
     z-index: 2;
-    top: 47%;
+    top: 23%;
 }
 
 .answer-block-onclick {
@@ -87,7 +87,7 @@ body {
 }
 
 .font-on-click {
-    display: inline-block;
+    display: block;
     
 }
 
