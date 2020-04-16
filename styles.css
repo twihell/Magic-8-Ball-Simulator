@@ -63,7 +63,7 @@ body {
     background: none;
     border: none;
     z-index: 2;
-    top: 44%;
+    top: 40%;
 }
 
 .answer-block-onclick {
@@ -76,7 +76,7 @@ body {
     color: #213E93;
     font: bold large Helvetica;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 1.5vw;
     line-height: 1;
     font-variant: small-caps;
     text-align: center;
@@ -88,7 +88,6 @@ body {
 
 .font-on-click {
     display: flex;
-    
 }
 
 .errorbox-wrapper {
@@ -97,7 +96,6 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    
 }
 
 .error-box {
@@ -116,7 +114,7 @@ body {
 }
 
 .close {
-    position: absolute;
+    position: relative;
     transition: all 200ms;
     font-size: 20px;
     font-weight: bold;
@@ -124,9 +122,7 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
     clear: both;
-    float: right;
-    right: 3%;
-    top: 10%;
+    left: 50%;
 }
 
 .error-box .close:hover {
@@ -135,6 +131,7 @@ body {
 
 .content {
     color: rgb(255, 255, 255);
+    position: absolute;
 }
 
 .this-table {
@@ -188,10 +185,11 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 900px) {
     .answer-block {
-        top: 41%;
+        top: 36%;
+        width: 15%;
     }
     .font {
-        font-size: 2vw;
+        font-size: 1.6vw;
     }
 }
 
@@ -206,12 +204,11 @@ tr:nth-child(even) {
         top: 30px;
     }
     .answer-block {
-        top: 38%;
+        top: 43%;
         width: 20%;
-        left: 40%;
     }
     .font {
-        font-size: 3vw;
+        font-size: 2.4vw;
     }
 }
 
@@ -221,22 +218,30 @@ tr:nth-child(even) {
         font-size: 12px;
     }
     .answer-block {
-        top: 38%;
+        top: 36%;
         width: 27%;
         left: 36.5%;
     }
     .this-table, .LeForm, .error-box {
         width: 100%;
     }
-
     .image {
         width: 90%;
     }
     .main-wrapper {
         top: 30px;
     }
-    
     .font {
         font-size: 3vw;
     }
 }
+
+
+@media screen and (max-width: 400px) {
+    .answer-block {
+        top: 33%;
+        width: 27%;
+        left: 36.5%;
+    }
+}
+
