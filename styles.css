@@ -52,6 +52,20 @@ body {
     position: relative;
 }
 
+label {
+    width: 30%;
+    float: left;
+    font-weight: bold;
+}
+
+.input1 {
+    width: 40%;
+}
+
+.input2 {
+    width: 70%;
+}
+
 .answer-block {
     display: none;
     position: absolute;
@@ -92,9 +106,6 @@ body {
 
 .errorbox-wrapper {
     display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
 }
 
@@ -105,8 +116,8 @@ body {
     border-radius: 5px;
     width: 45%;
     justify-content: center;
-    text-align: center;
     margin: auto;
+    position: relative;
 }
 
 .show {
@@ -114,15 +125,14 @@ body {
 }
 
 .close {
-    position: relative;
+    position: absolute;
     transition: all 200ms;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    clear: both;
-    left: 50%;
+    left: 95%;
 }
 
 .error-box .close:hover {
@@ -131,7 +141,6 @@ body {
 
 .content {
     color: rgb(255, 255, 255);
-    position: absolute;
 }
 
 .this-table {
@@ -191,6 +200,12 @@ tr:nth-child(even) {
     .font {
         font-size: 1.6vw;
     }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 2%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -213,7 +228,7 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 600px) {
-    .col-40, .col-60, th, td {
+    th, td {
         margin-top: 0;
         font-size: 12px;
     }
@@ -234,8 +249,20 @@ tr:nth-child(even) {
     .font {
         font-size: 3vw;
     }
-}
 
+    label {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 2%;
+    }
+    .input1 {
+        width: 100%;
+    }
+    .input2 {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .answer-block {
@@ -244,4 +271,3 @@ tr:nth-child(even) {
         left: 36.5%;
     }
 }
-
